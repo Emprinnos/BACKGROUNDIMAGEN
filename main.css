@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+
+html {
+    font-size: 62.5%;
+    
+    -webkit-box-sizing: border-box;
+    
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  *, *::before, *::after {
+    
+            -webkit-box-sizing: inherit;
+    
+                    box-sizing: inherit;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-family: 'Noto Sans JP', sans-serif;  
+  }
+
+ 
+
+  #principal {
+      min-height:100vh;    
+      background: -o-linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+      url(./img/fondo1.jpg) no-repeat center center fixed;    
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 7, 12, 0.75)), to(rgba(5, 7, 12, 0.75))),
+      url(./img/fondo.jpg) no-repeat center center fixed;    
+      background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+      url(./img/fondo.jpg) no-repeat center center fixed;
+      background-size: cover;     
+    } 
+
+   
+
+        
+  .flex {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+
+      -webkit-box-pack: center;
+
+          -ms-flex-pack: center;
+
+              justify-content: center;
+      width: 60%;
+      margin: auto;
+      padding-top: 250px;   
+  }
+
+  .titulo {
+      width: 60%;
+      text-align: left;
+  }
+  .p-1 {
+      font-size: 3.0rem;
+      padding-left:25px;
+      color: #f3f3f3;
+  }
+
+  .p-2 {
+    font-size: 2.5rem;
+    padding-left:55px;
+    color: #f3f3f3;
+}
+
+ .highlight-1 {
+     display: inline-block;
+     padding: 0 15px 5px 15px;
+     font-weight:600;
+     background-color:#0198E1;
+ }
+ .highlight-2 {
+    font-weight:600;
+    display: inline-block;
+    padding: 0 10px 5px 10px;
+    background-color: rgba(5, 7, 12, 0.40);
+
+ }
+
+  .formulario {
+      margin-top: 25px;
+      width:395px;
+      text-align: center;
+      padding: 20px 20px 30px 20px;
+      background: rgba(5, 7, 12, 0.40);        
+           
+  }
+  
+
+
+  h1 {
+      font-size:2.5rem;
+      color: #f3f3f3;
+
+  }
+
+  form div {
+     
+      width:350px;
+      margin:10px auto;
+      margin-bottom: 20px;
+     
+  }
+
+  input {
+      height: 50px;
+      width:100%;
+      font-size: 1.6rem;
+      padding-left:10px;
+      border-radius: 10px;
+      border:3px #0198E1 solid;
+      background: rgba(5, 7, 12, 0.30);
+        
+  }
+
+  input:focus {
+  outline:none;
+  border:4px #0198E1 solid;
+  }
+
+  button {
+      display: inline-block;
+      border:none;
+      height:50px;
+      border-radius: 10px;
+      padding: 10px 0;
+      width: 350px;
+      background-color:#dd4814;
+      font-size: 1.8rem;
+      font-weight: 600;
+      letter-spacing: 2px;;
+      color:#f3f3f3;
+      -webkit-transition: 150ms;
+      -o-transition: 150ms;
+      transition: 150ms;
+  }
+  button:focus {
+      outline:none;
+  }
+
+  button:hover{
+      -webkit-transform:translate(0, -5px) ;
+          -ms-transform:translate(0, -5px) ;
+              transform:translate(0, -5px) ;
+  }
+
+  @media (max-width: 1270px) {
+
+    .flex {
+        padding-top:150px;
+        -webkit-box-orient:vertical;
+        -webkit-box-direction:normal;
+            -ms-flex-direction:column;
+                flex-direction:column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        width: 80%;
+    
+    }
+
+    .titulo {
+        text-align: center;
+        width:100%;
+    }
+    .formulario {
+        width:395px;
+    }
+
+    .p-1, .p-2 {
+        padding:0;
+    }
+
+  }
+
+  @media (max-width: 385px) {
+    .flex {
+        padding-top:10px;
+    }
+    form div {
+     
+        width:200px;
+
+    }
+    button {
+
+        width: 200px;
+
+    }
+
+    .p-1{
+        font-size: 2.5rem;
+    }
+
+    .p-2{
+        display: none;
+    }
+    .formulario {
+        margin-top:0px;
+
+    }
+
+  }
+
+  
